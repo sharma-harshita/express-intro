@@ -23,7 +23,7 @@ app.get("/", function(request, response){
 
 // app.use("/api/v1", ExpressRouter)
 
-app.listen(4000, function(res, err){
+app.listen(process.env.PORT || 4000, function(res, err){
     console.log("Application is running");
 });
 
